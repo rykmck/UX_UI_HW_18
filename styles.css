@@ -4,7 +4,12 @@
 
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Brandon Grotesque Black';
+    text-transform: uppercase;
 }
 
 a {
@@ -46,6 +51,10 @@ nav {
     background-color: black;
     color: white;
     font-weight: bold;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
     
 }
 
@@ -67,9 +76,16 @@ nav {
 #nav-links a {
     display: flex;
     flex-direction: column;
-    padding: 0px 100px;
+    padding: 0px 75px;
     color: white;
     text-decoration: none;
+    font-family: 'Brandon Grotesque Black';
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+#nav-links a:hover {
+    text-shadow: 0px 2px #fff10d, 2px -1px #cc016b, -2px -2px #0093d3;
 }
 
 
@@ -119,7 +135,7 @@ nav {
 }
 
 .work-item:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
 
 .work-description {
@@ -128,7 +144,9 @@ nav {
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     color: white;
+    width: 100%;
 }
+
 
 .skills ul {
     padding-inline-start: 0;
