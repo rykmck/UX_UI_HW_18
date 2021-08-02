@@ -86,7 +86,7 @@ nav {
     max-width: 800px;
 }
 
-#hero-social-links img {
+.hero-social-buttons {
     height: 30px;
     width: 30px;
     margin: 10px 10px;
