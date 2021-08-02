@@ -7,6 +7,10 @@ body {
     font-family: sans-serif;
 }
 
+a {
+    color: #0093d3;
+}
+
 /* Columns */
 
 .row::after {
@@ -32,13 +36,6 @@ body {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-
-@media only screen and (max-width: 1400px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}
 
 
 /* navigation */
@@ -81,8 +78,14 @@ nav {
 #hero {
     background-color: black;
     color: white;
-    padding: 50px 150px 150px 150px;
+    padding: 100px 150px 150px 150px;
 }
+
+#hero-text {
+    margin-left: 150px; 
+    max-width: 800px;
+}
+
 
 #resume-links {
     display: flex;
@@ -97,13 +100,6 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
-
-@media only screen and (max-width: 1400px) {
-  /* For mobile phones: */
-  .left-column {
-    display: block;
-  }
 }
 
 .work-item {
@@ -147,4 +143,19 @@ nav {
 footer {
     padding-left: 150px;
     padding-right: 150px;
+}
+
+@media only screen and (max-width: 1400px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+    
+    #hero-text {
+    margin-left: 0;
+  }
+    
+    .left-column {
+    display: block;
+  }
 }
